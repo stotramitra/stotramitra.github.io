@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
   // do stuff here
-
+  function toggleBurger() {
+      var burger = $('.burger');
+      var menu = $('.navbar-menu');
+      burger.toggleClass('is-active');
+      menu.toggleClass('is-active');
+  }
 document.getElementById("language").onchange = function(){
         alert("You selected: "+this.value)
     }
@@ -11,4 +16,5 @@ dropdown.addEventListener('click', function(event) {
   dropdown.classList.toggle('is-active');
 });
 }, false);
+
 
